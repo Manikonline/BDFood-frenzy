@@ -11,6 +11,8 @@ import { AuthContext } from '../../Providers/AuthProvider';
 const Register = () => {
     const{createUser,updateUserData, user}=useContext(AuthContext)
     const [accepted, setAccepted] = useState(false);
+    const [error, setError]=useState('');
+    
 
     const handleRegister = event => {
         event.preventDefault();
@@ -21,13 +23,19 @@ const Register = () => {
         const password = form.password.value;
 
         console.log(name, photo, email, password)
+        setError('');
+        form.reset();
+
         createUser(email, password)
         .then(result=>{
             const loggedUser=result.user
             console.log(loggedUser)
             updateUserData(result.user, name, photo)
         })
-        .catch(error=>console.log(error))
+        .catch(error=>{
+            console.log(error)
+            setError(error.message)
+        })
 
 
        
@@ -60,6 +68,9 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name='password' placeholder="Password" required />
                 </Form.Group>
+                 <div>
+                    <p className='text-danger'>{error}</p>
+                 </div>
 
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check
@@ -68,7 +79,7 @@ const Register = () => {
                         name="accept"
                         label={<>Accept <Link to="/terms">Terms and Conditions</Link> </>} />
                 </Form.Group>
-                <Button variant="primary" disabled={!accepted} type="submit">
+                <Button className='w-100' variant="primary" disabled={!accepted} type="submit">
                     Register
                 </Button>
                 <br />
