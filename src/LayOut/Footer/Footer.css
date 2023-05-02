@@ -1,0 +1,21 @@
+.list-style li{
+    font-size: 10px;
+    color: gray;
+    list-style: none;
+}
+.list-style-link{
+    font-size: 10px;
+    color: gray;
+    list-style: none;
+}
+.list-style-link a{
+    text-decoration: none;
+    color: gray;
+}
+.list-style-link a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer-bg-color{
+    background-color: black;
+}

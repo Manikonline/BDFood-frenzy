@@ -1,11 +1,14 @@
+import './Footer.css'
 
 
 const Footer = () => {
     return (
-        <div>
-            <h3>footer</h3>
-        </div>
+      <h1>footer</h1>
     );
 };
 
 export default Footer;
+
+
+
+

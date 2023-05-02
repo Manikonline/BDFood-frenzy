@@ -4,6 +4,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { Link, } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { FaGoogle, FaGithub} from 'react-icons/fa';
+import './Login.css'
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 
 
@@ -65,7 +66,7 @@ const Login = () => {
     return (
         <Container className='w-25 mx-auto'>
             
-            <h3 className='text-center'>Please Login</h3>
+            <h5 className='text-center login-form'>Please Login</h5>
             <Form onSubmit={handleLogin} >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -97,8 +98,8 @@ const Login = () => {
 
 
             <div className='mt-3 text-center'>
-                <p>Or</p>
-                <h5>Login With</h5>
+                <p className='text-success'>Or</p>
+                <h5 >Login With</h5>
                 <div className='py-5'>
                 <Button onClick={handleGoogleLogin} className="button mb-2" variant="outline-primary"><FaGoogle /> Login with Google</Button>
                 <Button onClick={handleGithubLogin} className="button" variant="outline-secondary"><FaGithub /> Login with Github</Button>
