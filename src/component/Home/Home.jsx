@@ -14,7 +14,7 @@ const Home = () => {
  
 
     return (
-        <div className='my-5 carousel-data'>
+        <div className='my-4 carousel-data'>
             <Carousel className='carousel ' activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
        <div className='d-flex row'>

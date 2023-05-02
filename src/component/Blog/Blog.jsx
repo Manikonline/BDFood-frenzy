@@ -40,7 +40,7 @@ const Blog = () => {
 
                     </div>
                 </div>
-                <div className="card QNA-card">
+                <div className="card QNA-card mb-5">
                     <div className="card-body">
                         <h5 className="card-title ">4. What is a custom hook, and why will you create a custom hook?</h5>
                         <p className='text-start card-descip '>Custom React JS hooks are reusable functions that a React JS software developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem.</p>
