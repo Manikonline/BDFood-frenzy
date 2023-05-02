@@ -1,0 +1,11 @@
+.text-blue{
+    color: black;
+}
+.nav-brand{
+    font-weight: bold;
+}
+.nav-link{
+    margin-left: 5px;
+    color:black;
+    font-weight:bold;
+}
