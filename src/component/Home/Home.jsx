@@ -21,7 +21,7 @@ const Home = () => {
         <div className='col-sm-12 col-md-6'>
         <img
           className="d-block carousel-img "
-          src="../../../../public/bhuna-khichuri.png"
+          src="../../../public/bhuna-khichuri.png"
           alt="First slide"
         />
         </div>
@@ -39,7 +39,7 @@ const Home = () => {
          <div className='col-sm-12 col-md-6'>
          <img
           className="d-block carousel-img "
-          src="../../../../public/biriyani.jpg"
+          src="../../../public/biriyani.jpg"
           alt="Second slide"
         />
          </div>
@@ -58,7 +58,7 @@ const Home = () => {
          <div className='col-sm-12 col-md-6'>
          <img
           className="d-block carousel-img "
-          src="../../../../public/morog-polau.jpg"
+          src="../../../public/morog-polau.jpg"
           alt="Third slide"
         />
          </div>
