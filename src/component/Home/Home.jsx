@@ -87,6 +87,7 @@ const Home = () => {
     </div>
 
     <div className='row container-fluid  m-auto '>
+      <h4 className='text-center text-success'>Our Chefs</h4>
     {
       chefs.map(singleChef=><Chef key={singleChef.id} singleChef={singleChef}></Chef>)
      }
