@@ -1,11 +1,12 @@
 
 
 import './Blog.css'
-
+import pdf from '../../assets/pdf/screencapture-localhost-5173-blog-2023-05-04-00_45_57.pdf'
 const Blog = () => {
     return (
         <div className='container'>
             <h4 className='text-center py-10'>Here are some frequently asked question</h4>
+            <a className='btn btn-outline-success' variant="contained" href={pdf} download>PDF Download</a>
             <div className='row '>
                 <div className="card QNA-card  ">
                     <div className="card-body">
