@@ -14,12 +14,15 @@ import Login from './component/Login/Login.jsx';
 import Register from './component/Register/Register.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
 import ChefRecipes from './component/ChefRecipes/ChefRecipes.jsx';
+import PrivateRoute from './Route/PrivateRoute.jsx';
+import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Main></Main>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
@@ -39,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path:'chefrecipe/:id',
-        element:<ChefRecipes></ChefRecipes>,
+        element:<PrivateRoute><ChefRecipes></ChefRecipes></PrivateRoute>,
         loader:({params})=>fetch(`http://localhost:5000/datas/${params.id}`)
       }
     ]

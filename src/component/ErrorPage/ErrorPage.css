@@ -1,0 +1,19 @@
+.error-description{
+   border: 1px solid gray;
+   border-radius: 10px;
+   background-color: seashell;
+   width: 650px;
+   height:230px ;
+
+}
+.error-section{
+ margin-top: 210px;
+}
+.go-to-home{
+    border: 1px solid gray;
+    color:gray;
+}
+.go-to-home:hover{
+    border: 2px solid rgb(211, 184, 184);
+    color: gray;
+}

@@ -7,3 +7,6 @@
     width: 400px;
     margin: 5px auto;
 }
+.favorite-btn{
+    border: 1px solid green;
+}
