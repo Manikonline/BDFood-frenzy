@@ -2,16 +2,21 @@ import { useLoaderData } from "react-router-dom";
 import './ChefRecipes.css'
 import { FaThumbsUp } from 'react-icons/fa';
 import AllChefRecipes from "../AllChefRecipes/AllChefRecipes";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 const ChefRecipes = () => {
    const recipes=useLoaderData()
+   
     return (
         <div>
             <div className="chef-info container my-5">
             <div className="row my-5">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div>
-                        <img className="img-fluid chif-photo" src={recipes?.chefPicture} alt="" />
+                        <LazyLoadImage  className="img-fluid chif-photo" src={recipes?.chefPicture} alt="" />
+                        {/* <img className="img-fluid chif-photo" src={recipes?.chefPicture} alt="" /> */}
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">

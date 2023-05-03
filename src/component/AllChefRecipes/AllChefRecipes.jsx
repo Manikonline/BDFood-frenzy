@@ -2,10 +2,21 @@
 import './AllChefRecipes.css'
 import Rating from 'react-rating';
 import { FaRegStar, FaStar } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
 
 const AllChefRecipes = ({ allRecipes }) => {
+    const [disable, setDisable]=useState(false)
     const { name, Picture, ingredients, cooking_method, rating } = allRecipes;
     console.log(name)
+
+     const handleAddFavorite=()=>{
+            toast('Added to Favorites');
+            setDisable(true);
+     }
+    
+
     return (
         <div className='card recipe-card col-lg-4 col-md-4 col-sm-12 px-0 '>
             <img className='img-fluid allRecipes-picture' src={Picture} alt="" />
@@ -24,7 +35,10 @@ const AllChefRecipes = ({ allRecipes }) => {
                     />
                     <span className=''>{rating}</span>
                     </div>
-                    <button className='btn favorite-btn'>Add Favorite</button>
+                    {
+                        disable ? <button onClick={handleAddFavorite} className='btn favorite-btn disabled'>Add Favorite</button>:<button onClick={handleAddFavorite} className='btn favorite-btn'>Add Favorite</button>
+                    }
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>
