@@ -1,0 +1,9 @@
+.card-img{
+    width:100%;
+    height: 160px;
+    
+}
+.price{
+    color: red;
+    text-decoration: line-through;
+}

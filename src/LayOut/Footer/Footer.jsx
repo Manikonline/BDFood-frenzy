@@ -9,9 +9,9 @@ const Footer = () => {
                     <h6 className=' text-success'>Our location</h6>
                     <div className="contact-info text-start">
                         <ul className="list-style">
-                            <li><FaHouseUser></FaHouseUser><span>Uttara, Sector-5, Bangladesh</span></li>
-                            <li><FaPhoneVolume></FaPhoneVolume><span>+88 09 222 375 14</span></li>
-                            <li><FaEnvelope></FaEnvelope><span>bdfoodfrozen@gmail.com</span></li>
+                            <li><FaHouseUser></FaHouseUser> <span>Uttara, Sector-5, Bangladesh</span></li>
+                            <li><FaPhoneVolume></FaPhoneVolume> <span>+88 09 222 375 14</span></li>
+                            <li><FaEnvelope></FaEnvelope> <span>bdfoodFrenzy@gmail.com</span></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +35,8 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-12">
                     <h6 className='text-center text-success'>FeedBack</h6>
-                    <input type="email" className="form-control w-100 text-success" placeholder="Enter your Email address... " />
+                    <input type="email" className="form-control mb-2 w-100 text-success" placeholder="Enter your Email address... " />
+                    <textarea type="textarea" className="form-control w-100 text-success" placeholder="Your FeedBack" />
                     <button type="submit" className="btn btn-outline-success rounded-2 mt-3  text-white ">Submit</button>
                 </div>
 
