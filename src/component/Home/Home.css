@@ -12,7 +12,9 @@
     background-position: fixed;
     padding: 50px;
     margin: 20px;
-    border: 3px solid whitesmoke
+    border: 3px solid whitesmoke;
+    border-radius: 10px
+    
 ;
 }
 div h2{
@@ -27,6 +29,7 @@ div p{
     font-size: 10px;
     color: gray;
 }
+
 
 
 

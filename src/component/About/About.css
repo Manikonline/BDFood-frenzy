@@ -1,0 +1,24 @@
+.about-pic{
+    width: 490px;
+    height: 320px;
+    border-radius: 10px;
+    
+}
+.about-btn{
+    background-color: rgb(230, 227, 227);
+    color: black;
+    border: none;
+    outline: none;
+
+}
+.about-btn:hover{
+    background-color: rgb(211, 210, 210);
+    color: black;
+}
+.icon{
+    color: green;
+}
+.about-section{
+    border: 3px solid whitesmoke;
+    border-radius: 25px;
+}

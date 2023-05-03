@@ -1,12 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './Home.css'
 import Foods from '../Foods/Foods';
+import About from '../About/About';
+import Chef from '../Chef/Chef';
 
 
 const Home = () => {
 
   const [index, setIndex] = useState(0);
+  const [chefs, setChefs]=useState([])
+
+  useEffect(()=>{
+    fetch("http://localhost:5000/datas")
+    .then(res=>res.json())
+    .then(data=>setChefs(data))
+  },[])
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -22,7 +31,7 @@ const Home = () => {
           <div className='d-flex row'>
             <div className='col-sm-12 col-md-6'>
               <img
-                className="d-block carousel-img "
+                className="d-block carousel-img img-fluid "
                 src="../../../public/bhuna-khichuri.png"
                 alt="First slide"
               />
@@ -40,7 +49,7 @@ const Home = () => {
           <div className='d-flex  row'>
             <div className='col-sm-12 col-md-6'>
               <img
-                className="d-block carousel-img "
+                className="d-block carousel-img img-fluid "
                 src="../../../public/biriyani.jpg"
                 alt="Second slide"
               />
@@ -59,7 +68,7 @@ const Home = () => {
           <div className='d-flex  row'>
             <div className='col-sm-12 col-md-6'>
               <img
-                className="d-block carousel-img "
+                className="d-block carousel-img img-fluid "
                 src="../../../public/morog-polau.jpg"
                 alt="Third slide"
               />
@@ -77,7 +86,14 @@ const Home = () => {
       </Carousel>
     </div>
 
+    <div className='row container-fluid  m-auto '>
+    {
+      chefs.map(singleChef=><Chef key={singleChef.id} singleChef={singleChef}></Chef>)
+     }
+    </div>
+
     <Foods></Foods>
+    <About></About>
     
    </div>
   );

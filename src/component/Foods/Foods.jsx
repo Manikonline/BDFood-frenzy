@@ -3,7 +3,7 @@ import './Foods.css'
 
 const Foods = () => {
     return (
-        <div className="container-fluid my-4">
+        <div className="container-fluid my-5">
             <h4 className="font-bold ms-2 text-success text-center">Our Dishes</h4>
             <h3 className="font-bold ms-2 text-center">POPULAR DISHES</h3>
               <hr className="w-50 m-auto text-success" />
@@ -84,8 +84,8 @@ const Foods = () => {
                 <Card>
             <Card.Img className="card-img" variant="center" src="../../../public/singhara.jpg" />
             <Card.Body>
-            <p><span className="text-success">৳70</span> <span className="price">৳120</span></p>
               <h6>Kolijar Shingara </h6>
+              <p><span className="text-success">৳70</span> <span className="price">৳120</span></p>
               <button className="btn btn-outline-success w-100">Order Now</button>
             </Card.Body>
           </Card>
