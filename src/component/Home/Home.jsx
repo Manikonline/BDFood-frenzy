@@ -12,7 +12,7 @@ const Home = () => {
   const [chefs, setChefs]=useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:5000/datas")
+    fetch("https://food-frenzy-server-manikonline.vercel.app/datas")
     .then(res=>res.json())
     .then(data=>setChefs(data))
   },[])
@@ -32,7 +32,7 @@ const Home = () => {
             <div className='col-sm-12 col-md-6'>
               <img
                 className="d-block carousel-img img-fluid "
-                src="../../../public/bhuna-khichuri.png"
+                src="https://i.ibb.co/L88T8R1/bhuna-khichuri.png"
                 alt="First slide"
               />
             </div>
@@ -50,7 +50,7 @@ const Home = () => {
             <div className='col-sm-12 col-md-6'>
               <img
                 className="d-block carousel-img img-fluid "
-                src="../../../public/biriyani.jpg"
+                src="https://i.ibb.co/gVrLSbr/biriyani.jpg"
                 alt="Second slide"
               />
             </div>
@@ -69,7 +69,7 @@ const Home = () => {
             <div className='col-sm-12 col-md-6'>
               <img
                 className="d-block carousel-img img-fluid "
-                src="../../../public/morog-polau.jpg"
+                src="https://i.ibb.co/zHD79JV/morog-polau.jpg"
                 alt="Third slide"
               />
             </div>

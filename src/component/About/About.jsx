@@ -9,7 +9,7 @@ const About = () => {
              <h4 className="text-center text-success">About Us</h4>
              <h3 className="text-center">Why Choose Us?</h3>
             <div className="col-lg-6 col-md-6 col-sm-12 my-4">
-              <img className="about-pic img-fluid me-2" src="../../../public/about-2.jpg" alt="" />
+              <img className="about-pic img-fluid me-2" src="https://i.ibb.co/nrZftWt/about-2.jpg" alt="" />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 my-3 ">
                <h3 className='text-success ' >The Best Food In The Country</h3>

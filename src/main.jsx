@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       {
         path:'chefrecipe/:id',
         element:<PrivateRoute><ChefRecipes></ChefRecipes></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/datas/${params.id}`)
+        loader:({params})=>fetch(`https://food-frenzy-server-manikonline.vercel.app/datas/${params.id}`)
       }
     ]
   },
