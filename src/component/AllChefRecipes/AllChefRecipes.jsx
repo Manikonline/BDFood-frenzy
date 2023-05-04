@@ -20,7 +20,7 @@ const AllChefRecipes = ({ allRecipes }) => {
     return (
         <div className='card recipe-card col-lg-4 col-md-4 col-sm-12 px-0 '>
             <img className='img-fluid allRecipes-picture' src={Picture} alt="" />
-            <div className='p-2'>
+            <div className='p-2 '>
                 <h4 className='text-success'>{name}</h4>
                 <h6 className='text-bold'><span className='text-bold'>Ingredients: </span><span className='text-secondary'>{ingredients}</span></h6>
                 <p><span className='text-bold'>Cooking Method: </span>{cooking_method}</p>
