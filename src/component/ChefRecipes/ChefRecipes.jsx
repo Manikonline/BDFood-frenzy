@@ -30,7 +30,7 @@ const ChefRecipes = () => {
                 </div>
             </div>
         </div>
-          
+          {/* use map for getting all item */}
           <div className="row card-edit container-fluid py-5 ">
             {
                 recipes?.chefRecipes?.map(allRecipes=><AllChefRecipes key={allRecipes} allRecipes={allRecipes}></AllChefRecipes>)
